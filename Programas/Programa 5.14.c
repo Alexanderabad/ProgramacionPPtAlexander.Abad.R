@@ -80,4 +80,15 @@ void Frecuencia(int A[], int P, int B [])
      B[A[I]]++;
  }
 
- int Moda (int A[I])
+ int Moda(int A[], int T)
+    /* Esta función se utiliza para calcular la moda. */
+  {
+    int I, MOD = 0, VAL = A[0];
+    for (I=1; I<T; I++)
+    if (MOD < A[I])
+   {
+     MOD = I;
+     VAL = A[I];
+   }
+return (MOD);
+}

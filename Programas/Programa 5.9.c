@@ -27,7 +27,7 @@ void main(void)
    else
        printf("\nEl elemento se encuentra en el arreglo");
 }
-void Lectura(int A[], int T);
+void Lectura(int A[], int T)
 
 /* La funcion Lectura se utiliza para leer un arreglo unidimensional de T elemento de tipo entero. */
 {
