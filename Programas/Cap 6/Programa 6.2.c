@@ -8,6 +8,7 @@ El programa, al recibir como datos dos arreglos bidimensionales del mismo
 const int MAX = 50;
 
 /* Prototipo de funciones. */
+
 void Lectura(int [][MAX], int, int);
 void Suma(int [][MAX], int [][MAX], int [][MAX], int, int);
 void Imprime(int [][MAX], int, int);
