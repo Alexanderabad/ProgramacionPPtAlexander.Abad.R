@@ -80,13 +80,13 @@ printf("Teléfono: ");
 gets(A[I].tel);
 }
 }
-void F1(paciente A[], int T
+void F1(paciente A[], int T)
 /* Esta función se utiliza para obtener el porcentaje tanto de hombres como de
  mujeres registrados en el hospital. */
 {
 int I, FEM, MAS, TOT;
-for (I=0; I<T; I++)
-switch (A [I].sexo)
+for (I=0; I<T; I++);
+switch (A [I].sexo);
 {
 case 'F': FEM++;
 break;

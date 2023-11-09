@@ -57,7 +57,6 @@ struct empleado *e1, *e2, e3, e4;
 
  /* En el programa principal se leen los campos de una variable, e3, y un
  apuntador de tipo estructura, *e1. */
-e1 = new (struct empleado);
 printf("\nIngrese el nombre del empleado 1: ");
 scanf("%s", &(*e1).nombre);
 fflush(stdin);
@@ -68,7 +67,6 @@ scanf("%f", &e1->sueldo);
 printf("—-Ingrese la direccion del empleado—-");
 printf("\n\tCalle: ");
 fflush(stdin);
-gets(e1->dirección, calle);
 printf("\tNúmero: ");
 scanf("%d", &e1->direccion.numero);
 printf("\tCódigo Postal: ");
@@ -96,12 +94,11 @@ fflush(stdin);
 gets(e3.direccion.localidad);
  /* En la función Lectura se leen los campos de una variable, e4, y un apuntador
  de tipo estructura, *e2. */
-e2 = new (struct empleado);
 Lectura(e2);
 Lectura(&e4);
 printf("\nDatos del empleado 1\n");
 printf("%s\t%s\t%.2f\t%s\t%d\t%d\t%s", e1->nombre, e1->departamento,
- e1>sueldo,
+
 e1->direccion.calle, e1->direccion.numero, e1->direccion.cp,
  e1->direccion.localidad);
 printf("\nDatos del empleado 4n");

@@ -31,12 +31,12 @@ puts(FRA[p]);
 printf("\nLongitud: %d", l);
 }
 
-int longitud(char *cadena)
+int longitud(char cadena)
 /* Esta funcion calcula la longitud de la cadena. Es identica a la funcion
  cuenta del programa 7.13. */
 {
 int cue = 0;
-while (! cadena[cue] == '\0')
+
    cue++;
 return (cue);
 }

@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-/* Invierte datos
-El programa, al recibir como dato un conjunto de datos de entrada, invierte
-el orden de los mismos cuando los imprime.
+int main() {
+    char letra;
 
-A,B, C Y D: variables de tipo entero.*/
+    printf("Declaración del alfabeto de la A a la Z:\n");
 
-void main(void)
-{
-    int A, B, C, D;
-    printf ("ingrese cuatros datos de tipo entero:");
-    scanf("%d %d %d %d", &A, &B, &C, &D);
-    printf ("\n %d %d %d %d" , D, C, B, A);
+    for (letra = 'A'; letra <= 'Z'; letra++) {
+        printf("%c ", letra);
+    }
+
+    printf("\n");
+
+    return 0;
 }

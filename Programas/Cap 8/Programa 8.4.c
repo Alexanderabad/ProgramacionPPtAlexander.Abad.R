@@ -28,17 +28,14 @@ scanf("%d", &TAM);
 }
 while (TAM > 50 || TAM < 1);       /* Se verifica que el tamaño del arreglo sea
                                     correcto. */
-Lectura(ARRE, TAM)
 F1(ARRE, TAM);
 F2(ARRE, TAM);
 F3(ARRE, TAM);
 }
-void Lectura(alumno A[], int T)
 /* La función Lectura se utiliza para leer un arreglo unidimensional de tipo
    estructura alumno de T elementos. */
-{
-int I, J;
-for (I=0; I<T; I++)
+
+int I, J ;
 {
 printf("\nIngrese los datos del alumno %d", I+1);
 printf("\nIngrese la matrícula del alumno: ");

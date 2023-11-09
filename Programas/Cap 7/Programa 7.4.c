@@ -20,14 +20,12 @@ gets(*cad1); gets(cad1);
    funcion de lectura gets, es necesario inicializarlo como se hace en la siguiente
    instruccion. */
 
-
-char *cad1 = " ";
+puts(cad1);
 gets(cad1);
 /* Correcto. Primero se le asigna un valor a la posicion de memoria a la que
    apunta cad1. Luego podemos modificar el contenido de esta posicion de memoria
    utilizando la funcion gets. */
 
-char cad1[];
 /* Incorrecto. Se genera un error en la compilacion del programa, porque no
    se reserva el espacio correspondiente. */
 
